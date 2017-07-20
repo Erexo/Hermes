@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Core", "Hermes.Core\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Api", "Hermes.Api\Hermes.Api.csproj", "{215A8F89-150F-454D-B2F0-FEA537856318}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hermes.Tests", "Hermes.Tests\Hermes.Tests.csproj", "{AFBA887C-EAD5-4987-B487-78CE50E12CFF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5D4F5C55-6A3E-493F-A16E-0ACDB786A0D8} = {5D4F5C55-6A3E-493F-A16E-0ACDB786A0D8}
+		{215A8F89-150F-454D-B2F0-FEA537856318} = {215A8F89-150F-454D-B2F0-FEA537856318}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +33,10 @@ Global
 		{215A8F89-150F-454D-B2F0-FEA537856318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{215A8F89-150F-454D-B2F0-FEA537856318}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{215A8F89-150F-454D-B2F0-FEA537856318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFBA887C-EAD5-4987-B487-78CE50E12CFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFBA887C-EAD5-4987-B487-78CE50E12CFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFBA887C-EAD5-4987-B487-78CE50E12CFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFBA887C-EAD5-4987-B487-78CE50E12CFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -25,7 +25,7 @@ namespace Hermes.Infrastructure.Repositories
             => await Users.AsQueryable().FirstOrDefaultAsync(o => o.Email == email);
 
         public async Task<User> GetByUsernameAsync(string username)
-            => await Users.AsQueryable().FirstOrDefaultAsync(o => o.Username == username);
+            => await Users.AsQueryable().FirstOrDefaultAsync(o => o.Username == username.ToLower());
 
         public async Task<IEnumerable<User>> GetAllAsync()
             => await Users.AsQueryable().ToListAsync();

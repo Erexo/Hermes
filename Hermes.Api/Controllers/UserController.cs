@@ -30,6 +30,14 @@ namespace Hermes.Api.Controllers
             return Json(command.Jwt);
         }
 
+        [HttpGet]
+        [Authorize]
+        public async Task<IActionResult> GetUser(GetUser command)
+        {
+            await DispatchAsync(command);
+            return Json(command.User);
+        }
+
         [HttpPut]
         [Authorize]
         [Route("password")]
